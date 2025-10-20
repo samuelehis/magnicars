@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Luxury car rental design system with sophisticated color palette */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 98%;
+    --foreground: 220 15% 15%;
+
+    /* Card styling */
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    /* Popover styling */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    /* Primary - Deep luxury blue/black */
+    --primary: 220 45% 8%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 220 100% 25%;
+
+    /* Secondary - Premium gold accent */
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 220 45% 8%;
+
+    /* Muted colors */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 15% 45%;
+
+    /* Accent - Refined silver */
+    --accent: 220 20% 92%;
+    --accent-foreground: 220 45% 8%;
+
+    /* Status colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    /* Form elements */
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 220 45% 8%;
+
+    /* Premium gradients */
+    --gradient-luxury: linear-gradient(135deg, hsl(220 45% 8%), hsl(220 100% 12%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 95% 55%), hsl(38 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 45% 8% / 0.95), hsl(220 100% 12% / 0.9));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(220 15% 98%));
+
+    /* Shadows */
+    --shadow-luxury: 0 25px 50px -12px hsl(220 45% 8% / 0.25);
+    --shadow-glow: 0 0 40px hsl(220 100% 25% / 0.3);
+    --shadow-card: 0 10px 30px -5px hsl(220 15% 15% / 0.1);
+
+    /* Animation timings */
+    --transition-luxury: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-quick: all 0.2s ease-out;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Base colors - Dark luxury theme */
+    --background: 220 45% 5%;
+    --foreground: 0 0% 95%;
+
+    /* Card styling */
+    --card: 220 40% 8%;
+    --card-foreground: 0 0% 95%;
+
+    /* Popover styling */
+    --popover: 220 40% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - Light luxury blue/white for dark mode */
+    --primary: 0 0% 95%;
+    --primary-foreground: 220 45% 8%;
+    --primary-glow: 220 100% 60%;
+
+    /* Secondary - Gold accent (same for both modes) */
+    --secondary: 45 95% 55%;
+    --secondary-foreground: 220 45% 8%;
+
+    /* Muted colors */
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 15% 65%;
+
+    /* Accent - Darker refined silver */
+    --accent: 220 20% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    /* Status colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    /* Form elements */
+    --border: 220 15% 25%;
+    --input: 220 15% 18%;
+    --ring: 0 0% 95%;
+
+    /* Premium gradients for dark mode */
+    --gradient-luxury: linear-gradient(135deg, hsl(220 45% 8%), hsl(220 40% 12%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 95% 55%), hsl(38 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 45% 5% / 0.95), hsl(220 40% 8% / 0.9));
+    --gradient-card: linear-gradient(135deg, hsl(220 40% 8%), hsl(220 35% 10%));
+
+    /* Sidebar */
+    --sidebar-background: 220 45% 5%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 45 95% 55%;
+    --sidebar-primary-foreground: 220 45% 8%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 45 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

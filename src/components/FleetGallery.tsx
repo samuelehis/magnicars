@@ -12,6 +12,16 @@ import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
 import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
+import toyotaPradoImage from "@/assets/cars/Maybach-Viano.jpg";
+import toyotaPradoImage from "@/assets/cars/Range-Rover.jpg";
+import toyotaPradoImage from "@/assets/cars/Escalade-2023.jpg";
+import toyotaPradoImage from "@/assets/cars/Toyota-Hilux-2024-Magnicarz.jpg";
+import toyotaPradoImage from "@/assets/cars/Toyota-Prado-2021.jpg";
+import toyotaPradoImage from "@/assets/cars/Toyota-HiAce-2024.jpg";
+import toyotaPradoImage from "@/assets/cars/MercedezBenz-S-class.jpg";
+import toyotaPradoImage from "@/assets/cars/Benz-GLE350-2017.jpg";
+import toyotaPradoImage from "@/assets/cars/LX570-2018.jpg";
+import toyotaPradoImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();
@@ -93,40 +103,40 @@ const FleetGallery = () => {
       image: toyotaPradoImage,
       rating: 4.7,
       features: ["Family Friendly", "Reliable", "Comfortable"]
-    }
-     {
+    },
+    {
       id: 7,
-      model: "Rolls Royce Cullinan",
+      model: "Maybach Viano",
       year: 2023,
       transmission: "Auto",
       price: 6000000,
       type: "luxury-suv",
       location: "lagos",
-      image: rollsRoyceImage,
+      image: MaybachVianoImage,
       rating: 5.0,
       features: ["Chauffeur Available", "Premium Interior", "WiFi"]
     },
     {
       id: 8,
-      model: "Honda Accord",
-      year: 2014,
+      model: "Escalade",
+      year: 2023,
       transmission: "Auto",
-      price: 850000,
+      price: 750000,
       type: "sedan",
-      location: "abuja",
-      image: hondaAccordImage,
+      location: "Lagos",
+      image: escalade2023Image,
       rating: 4.5,
       features: ["Fuel Efficient", "Reliable", "Comfortable"]
     },
     {
       id: 9,
-      model: "Toyota LandCruiser",
-      year: 2023,
+      model: "Toyota HiAce",
+      year: 2024,
       transmission: "Auto",
-      price: 600000,
+      price: 400000,
       type: "suv",
       location: "Lagos",
-      image: toyotaLandcruiserImage,
+      image: toyotaHiAceImage,
       rating: 4.8,
       features: ["Off-Road Capable", "Spacious", "7-Seater"]
     },
@@ -138,21 +148,21 @@ const FleetGallery = () => {
       price: 170000,
       type: "suv",
       location: "lagos",
-      image: toyotaHiluxImage,
+      image: toyotaHighlanderImage,
       rating: 4.6,
-      features: ["Utility Vehicle", "Robust", "Business Ready"]
+      features: ["Family friendly", "Robust", "Business Ready"]
     },
     {
       id: 11,
-      model: "Porsche Cayenne",
-      year: 2019,
+      model: "G63 Bulletproof",
+      year: 2020,
       transmission: "Auto",
-      price: 650000,
+      price: 2300000,
       type: "luxury-suv",
       location: "Lagos",
-      image: porscheCayenneImage,
+      image: G63BulletproofImage,
       rating: 5.0,
-      features: ["Sports Performance", "Luxury", "Prestige"]
+      features: ["Bullet Proof", "Luxury", "Prestige"]
     },
     {
       id: 12,

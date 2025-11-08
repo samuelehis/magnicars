@@ -12,16 +12,16 @@ import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
 import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
-import toyotaPradoImage from "@/assets/cars/Maybach-Viano.jpg";
-import toyotaPradoImage from "@/assets/cars/Range-Rover.jpg";
-import toyotaPradoImage from "@/assets/cars/Escalade-2023.jpg";
-import toyotaPradoImage from "@/assets/cars/Toyota-Hilux-2024-Magnicarz.jpg";
-import toyotaPradoImage from "@/assets/cars/Toyota-Prado-2021.jpg";
-import toyotaPradoImage from "@/assets/cars/Toyota-HiAce-2024.jpg";
-import toyotaPradoImage from "@/assets/cars/MercedezBenz-S-class.jpg";
-import toyotaPradoImage from "@/assets/cars/Benz-GLE350-2017.jpg";
-import toyotaPradoImage from "@/assets/cars/LX570-2018.jpg";
-import toyotaPradoImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
+import maybachVianoImage from "@/assets/cars/Maybach-Viano.jpg";
+import rangeRoverImage from "@/assets/cars/Range-Rover.jpg";
+import escalade2023Image from "@/assets/cars/Escalade-2023.jpg";
+import toyotaHilux2024Image from "@/assets/cars/Toyota-Hilux-2024-Magnicarz.jpg";
+import toyotaPrado2021Image from "@/assets/cars/Toyota-Prado-2021.jpg";
+import toyotaHiaceImage from "@/assets/cars/Toyota-HiAce-2024.jpg";
+import mercedezBenzSclassImage from "@/assets/cars/MercedezBenz-S-class.jpg";
+import benzGle350Image from "@/assets/cars/Benz-GLE350-2017.jpg";
+import lx570Image from "@/assets/cars/LX570-2018.jpg";
+import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();
@@ -70,13 +70,13 @@ const FleetGallery = () => {
     },
     {
       id: 4,
-      model: "Toyota Highlander",
-      year: 2019,
+      model: "Toyota Hilux",
+      year: 2024,
       transmission: "Auto",
-      price: 170000,
+      price: 300000,
       type: "suv",
       location: "lagos",
-      image: toyotaHiluxImage,
+      image: toyotaHilux2024Image,
       rating: 4.6,
       features: ["Utility Vehicle", "Robust", "Business Ready"]
     },
@@ -112,7 +112,7 @@ const FleetGallery = () => {
       price: 6000000,
       type: "luxury-suv",
       location: "lagos",
-      image: MaybachVianoImage,
+      image: maybachVianoImage,
       rating: 5.0,
       features: ["Chauffeur Available", "Premium Interior", "WiFi"]
     },
@@ -136,7 +136,7 @@ const FleetGallery = () => {
       price: 400000,
       type: "suv",
       location: "Lagos",
-      image: toyotaHiAceImage,
+      image: toyotaHiaceImage,
       rating: 4.8,
       features: ["Off-Road Capable", "Spacious", "7-Seater"]
     },
@@ -148,7 +148,7 @@ const FleetGallery = () => {
       price: 170000,
       type: "suv",
       location: "lagos",
-      image: toyotaHighlanderImage,
+      image: toyotaPrado2021Image,
       rating: 4.6,
       features: ["Family friendly", "Robust", "Business Ready"]
     },
@@ -160,7 +160,7 @@ const FleetGallery = () => {
       price: 2300000,
       type: "luxury-suv",
       location: "Lagos",
-      image: G63BulletproofImage,
+      image: g63BulletproofImage,
       rating: 5.0,
       features: ["Bullet Proof", "Luxury", "Prestige"]
     },
@@ -172,7 +172,7 @@ const FleetGallery = () => {
       price: 240000,
       type: "suv",
       location: "lagos",
-      image: toyotaPradoImage,
+      image: toyotaPrado2021Image,
       rating: 4.7,
       features: ["Family Friendly", "Reliable", "Comfortable"]
     }

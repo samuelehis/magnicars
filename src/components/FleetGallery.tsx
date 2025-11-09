@@ -22,6 +22,7 @@ import mercedezBenzSclassImage from "@/assets/cars/MercedezBenz-S-class.jpg";
 import benzGle350Image from "@/assets/cars/Benz-GLE350-2017.jpg";
 import lx570Image from "@/assets/cars/LX570-2018.jpg";
 import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
+import toyotaHighlanderImage from "@/assets/cars/Toyota-Highlander-2019.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();
@@ -148,7 +149,7 @@ const FleetGallery = () => {
       price: 170000,
       type: "suv",
       location: "lagos",
-      image: toyotaPrado2021Image,
+      image: toyotaHighlanderImage,
       rating: 4.6,
       features: ["Family friendly", "Robust", "Business Ready"]
     },
@@ -186,6 +187,9 @@ const FleetGallery = () => {
     );
   });
 
+// Limit to 12 cars on home page
+  const displayedCars = filteredCars.slice(0, 12);
+  
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-NG', {
       style: 'currency',
@@ -332,6 +336,19 @@ const FleetGallery = () => {
             <p className="text-muted-foreground text-lg">
               No vehicles match your current filters. Please adjust your search criteria.
             </p>
+          </div>
+        )}
+
+        {/* View More Fleet Button */}
+        {filteredCars.length > 12 && (
+          <div className="text-center mt-12">
+            <Button 
+              variant="luxury" 
+              size="lg"
+              onClick={() => navigate('/fleet')}
+            >
+              View More Fleet
+            </Button>
           </div>
         )}
       </div>

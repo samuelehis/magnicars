@@ -18,7 +18,7 @@ import escalade2023Image from "@/assets/cars/Escalade-2023.jpg";
 import toyotaHilux2024Image from "@/assets/cars/Toyota-Hilux-2024-Magnicarz.jpg";
 import toyotaPrado2021Image from "@/assets/cars/Toyota-Prado-2021.jpg";
 import toyotaHiaceImage from "@/assets/cars/Toyota-HiAce-2024.png";
-import mercedezBenzSclassImage from "@/assets/cars/Benz-S-class-2023.jpg";
+import mercedezBenzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
 import benzGle350Image from "@/assets/cars/Benz-GLE350-2017.jpg";
 import lx570Image from "@/assets/cars/LX570-2018.jpg";
 import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";

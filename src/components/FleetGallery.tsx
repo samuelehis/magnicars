@@ -50,7 +50,7 @@ const FleetGallery = () => {
       model: "Lexus LX570",
       year: 2018,
       transmission: "Auto",
-      price: 450000,
+      price: 350000,
       type: "luxury-suv",
       location: "Lagos & Abuja",
       image: lx570Image,
@@ -95,13 +95,13 @@ const FleetGallery = () => {
     },
     {
       id: 6,
-      model: "Toyota Prado",
-      year: 2021,
+      model: "Mercedes-Benz GLE 350",
+      year: 2017,
       transmission: "Auto",
-      price: 240000,
+      price: 300000,
       type: "suv",
       location: "lagos",
-      image: toyotaPradoImage,
+      image: benzGle350Image,
       rating: 4.7,
       features: ["Family Friendly", "Reliable", "Comfortable"]
     },
@@ -111,7 +111,7 @@ const FleetGallery = () => {
       year: 2022,
       transmission: "Auto",
       price: 600000,
-      type: "luxury-suv",
+      type: "luxury-bus",
       location: "lagos",
       image: maybachVianoImage,
       rating: 5.0,
@@ -120,7 +120,7 @@ const FleetGallery = () => {
     {
       id: 8,
       model: "Escalade",
-      year: 2024,
+      year: 2023,
       transmission: "Auto",
       price: 750000,
       type: "luxury-suv",
@@ -135,11 +135,11 @@ const FleetGallery = () => {
       year: 2024,
       transmission: "Auto",
       price: 400000,
-      type: "Bus",
+      type: "pickup",
       location: "Lagos",
       image: toyotaHiaceImage,
       rating: 4.8,
-      features: ["Off-Road Capable", "Spacious", "7-Seater"]
+      features: ["Off-Road Capable", "Spacious", "15-Seater"]
     },
     {
       id: 10,
@@ -155,7 +155,7 @@ const FleetGallery = () => {
     },
     {
       id: 11,
-      model: "G63 ",
+      model: "Mercedes-AMG G 63 ",
       year: 2023,
       transmission: "Auto",
       price: 1500000,

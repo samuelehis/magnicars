@@ -10,7 +10,6 @@ import rollsRoyceImage from "@/assets/cars/rolls-royce-cullinan.jpg";
 import hondaAccordImage from "@/assets/cars/honda-accord.jpg";
 import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
-import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
 import maybachVianoImage from "@/assets/cars/Maybach-Viano.jpg";
 import rangeRoverImage from "@/assets/cars/Range-Rover.jpg";
@@ -22,7 +21,6 @@ import mercedezBenzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
 import benzGle350Image from "@/assets/cars/Benz-GLE350-2017.jpg";
 import lx570Image from "@/assets/cars/LX570-2018.jpg";
 import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
-import toyotaHighlanderImage from "@/assets/cars/Toyota-Highlander-2019.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();

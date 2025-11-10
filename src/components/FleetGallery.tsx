@@ -143,13 +143,13 @@ const FleetGallery = () => {
     },
     {
       id: 10,
-      model: "Toyota Highlander",
-      year: 2019,
+      model: "Range Rover Sports",
+      year: 2021,
       transmission: "Auto",
-      price: 170000,
-      type: "suv",
+      price: 450000,
+      type: "luxury-suv",
       location: "lagos",
-      image: toyotaHighlanderImage,
+      image: raneRoverImage,
       rating: 4.6,
       features: ["Family friendly", "Robust", "Business Ready"]
     },

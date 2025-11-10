@@ -46,7 +46,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="gold" size="lg" className="text-lg px-8 py-3" onClick={() => navigate('/fleet')>
+            <Button variant="gold" size="lg" className="text-lg px-8 py-3" onClick={() => navigate('/fleet')}>
               Explore Fleet
             </Button>
             <Button variant="hero" size="lg" className="text-lg px-8 py-3" onClick={() => setBookingModalOpen(true)}>

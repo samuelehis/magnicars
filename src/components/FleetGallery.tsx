@@ -53,7 +53,7 @@ const FleetGallery = () => {
       location: "Lagos & Abuja",
       image: lx570Image,
       rating: 4.5,
-      features: ["Fuel Efficient", "Reliable", "Comfortable"]
+      features: ["Prestige", "Reliable", "Comfortable"]
     },
     {
       id: 3,
@@ -89,7 +89,7 @@ const FleetGallery = () => {
       location: "Lagos",
       image: mercedezBenzSclassImage,
       rating: 5.0,
-      features: ["Sports Performance", "Luxury", "Prestige"]
+      features: ["Performance", "Luxury", "Prestige"]
     },
     {
       id: 6,

@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Car, Users, Shield, Plane, CreditCard, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-luxury-car.jpg";
 import BookingForm from "./BookingForm";
-import fleet from "pages/Fleet";
 
 const Hero = () => {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);

@@ -174,6 +174,42 @@ const FleetGallery = () => {
       image: toyotaPrado2021Image,
       rating: 4.7,
       features: ["Family Friendly", "Reliable", "Comfortable"]
+    },
+    {
+      id: 13,
+      model: "Range Rover Sports",
+      year: 2021,
+      transmission: "Auto",
+      price: 450000,
+      type: "luxury-suv",
+      location: "lagos",
+      image: raneRoverImage,
+      rating: 4.6,
+      features: ["Family friendly", "Robust", "Business Ready"]
+    },
+    {
+      id: 14,
+      model: "Mercedes-AMG G 63 ",
+      year: 2023,
+      transmission: "Auto",
+      price: 1500000,
+      type: "luxury-suv",
+      location: "Lagos",
+      image: g63BulletproofImage,
+      rating: 5.0,
+      features: ["Comfort", "Luxury", "Prestige"]
+    },
+    {
+      id: 15,
+      model: "Toyota Prado",
+      year: 2021,
+      transmission: "Auto",
+      price: 240000,
+      type: "suv",
+      location: "lagos",
+      image: toyotaPrado2021Image,
+      rating: 4.7,
+      features: ["Family Friendly", "Reliable", "Comfortable"]
     }
   ];
 

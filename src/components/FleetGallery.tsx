@@ -10,17 +10,8 @@ import rollsRoyceImage from "@/assets/cars/rolls-royce-cullinan.jpg";
 import hondaAccordImage from "@/assets/cars/honda-accord.jpg";
 import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
+import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
-import maybachVianoImage from "@/assets/cars/Maybach-Viano.jpg";
-import rangeRoverImage from "@/assets/cars/Range-Rover.jpg";
-import escalade2023Image from "@/assets/cars/Escalade-2023.jpg";
-import toyotaHilux2024Image from "@/assets/cars/Toyota-Hilux-2024-Magnicarz.jpg";
-import toyotaPrado2021Image from "@/assets/cars/Toyota-Prado-2021.jpg";
-import toyotaHiaceImage from "@/assets/cars/Toyota-HiAce-2024.png";
-import mercedezBenzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
-import benzGle350Image from "@/assets/cars/Benz-GLE350-2017.jpg";
-import lx570Image from "@/assets/cars/LX570-2018.jpg";
-import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();
@@ -31,226 +22,147 @@ const FleetGallery = () => {
   const [selectedCarForBooking, setSelectedCarForBooking] = useState("");
 
   const cars = [
+    // Premium Fleet - High End & Top Luxury
     {
       id: 1,
       model: "Rolls Royce Phantom",
       year: 2023,
       transmission: "Auto",
       price: 6000000,
-      type: "luxury-sedan",
+      type: "high-end",
       location: "lagos",
       image: rollsRoyceImage,
       rating: 5.0,
-      features: ["Chauffeur Available", "Premium Interior", "WiFi"]
+      features: ["Ultimate Luxury", "Chauffeur", "Prestige"]
     },
     {
       id: 2,
-      model: "Lexus LX570",
-      year: 2018,
+      model: "Rolls Royce Cullinan",
+      year: 2023,
       transmission: "Auto",
-      price: 350000,
-      type: "luxury-suv",
-      location: "Lagos & Abuja",
-      image: lx570Image,
-      rating: 4.5,
-      features: ["Fuel Efficient", "Reliable", "Comfortable"]
+      price: 6000000,
+      type: "high-end",
+      location: "lagos",
+      image: rollsRoyceImage,
+      rating: 5.0,
+      features: ["Ultimate SUV", "Luxury", "Prestige"]
     },
     {
       id: 3,
-      model: "Toyota LandCruiser",
-      year: 2023,
+      model: "Mercedes Benz G63 Bulletproof",
+      year: 2020,
       transmission: "Auto",
-      price: 600000,
-      type: "suv",
-      location: "Lagos",
-      image: toyotaLandcruiserImage,
-      rating: 4.8,
-      features: ["Off-Road Capable", "Spacious", "7-Seater"]
+      price: 2300000,
+      type: "bulletproof",
+      location: "lagos",
+      image: porscheCayenneImage,
+      rating: 5.0,
+      features: ["Armored", "VIP Security", "Ultimate Protection"]
     },
     {
       id: 4,
-      model: "Toyota Hilux",
-      year: 2024,
+      model: "Bentley GT",
+      year: 2023,
       transmission: "Auto",
-      price: 300000,
-      type: "suv",
+      price: 2000000,
+      type: "high-end",
       location: "lagos",
-      image: toyotaHilux2024Image,
-      rating: 4.6,
-      features: ["Utility Vehicle", "Robust", "Business Ready"]
+      image: rollsRoyceImage,
+      rating: 5.0,
+      features: ["Performance", "Luxury", "Prestige"]
     },
     {
       id: 5,
-      model: "Mercedes Benz S-Class",
-      year: 2023,
+      model: "Mercedes Benz G63 Soft Body",
+      year: 2022,
       transmission: "Auto",
-      price: 1500000,
-      type: "sedan",
-      location: "Lagos",
-      image: mercedezBenzSclassImage,
+      price: 1800000,
+      type: "luxury-suv",
+      location: "lagos",
+      image: porscheCayenneImage,
       rating: 5.0,
-      features: ["Sports Performance", "Luxury", "Prestige"]
+      features: ["Iconic", "Exclusive", "Power"]
     },
     {
       id: 6,
-      model: "Mercedes-Benz GLE 350",
-      year: 2017,
+      model: "Mercedes Benz Maybach S560",
+      year: 2023,
       transmission: "Auto",
-      price: 300000,
-      type: "suv",
+      price: 1500000,
+      type: "luxury-sedan",
       location: "lagos",
-      image: benzGle350Image,
-      rating: 4.7,
-      features: ["Family Friendly", "Reliable", "Comfortable"]
+      image: hondaAccordImage,
+      rating: 5.0,
+      features: ["Executive", "Ultimate Luxury", "Chauffeur"]
     },
     {
       id: 7,
-      model: "Maybach Viano",
-      year: 2022,
+      model: "Mercedes Benz S-Class 580 AMG",
+      year: 2023,
       transmission: "Auto",
-      price: 600000,
-      type: "luxury-bus",
-      location: "lagos",
-      image: maybachVianoImage,
+      price: 1500000,
+      type: "luxury-sedan",
+      location: "abuja",
+      image: hondaAccordImage,
       rating: 5.0,
-      features: ["Chauffeur Available", "Premium Interior", "WiFi"]
+      features: ["Performance", "Technology", "AMG"]
     },
     {
       id: 8,
-      model: "Escalade",
+      model: "BMW 730i Series",
       year: 2023,
       transmission: "Auto",
-      price: 750000,
-      type: "luxury-suv",
-      location: "Lagos",
-      image: escalade2023Image,
-      rating: 4.5,
-      features: ["Fuel Efficient", "Reliable", "Comfortable"]
+      price: 1500000,
+      type: "luxury-sedan",
+      location: "lagos",
+      image: hondaAccordImage,
+      rating: 5.0,
+      features: ["Executive", "Premium", "Tech"]
     },
     {
       id: 9,
-      model: "Toyota HiAce",
-      year: 2024,
+      model: "Bentley",
+      year: 2020,
       transmission: "Auto",
-      price: 400000,
-      type: "pickup",
-      location: "Lagos",
-      image: toyotaHiaceImage,
-      rating: 4.8,
-      features: ["Off-Road Capable", "Spacious", "15-Seater"]
-    },
-    {
-      id: 10,
-      model: "Range Rover Sports",
-      year: 2021,
-      transmission: "Auto",
-      price: 450000,
-      type: "luxury-suv",
+      price: 1300000,
+      type: "high-end",
       location: "lagos",
-      image: raneRoverImage,
-      rating: 4.6,
-      features: ["Family friendly", "Robust", "Business Ready"]
-    },
-    {
-      id: 11,
-      model: "Mercedes-AMG G 63 ",
-      year: 2023,
-      transmission: "Auto",
-      price: 1500000,
-      type: "luxury-suv",
-      location: "Lagos",
-      image: g63BulletproofImage,
+      image: rollsRoyceImage,
       rating: 5.0,
-      features: ["Comfort", "Luxury", "Prestige"]
+      features: ["British Luxury", "Prestige", "Power"]
     },
-    {
-      id: 12,
-      model: "Toyota Prado",
-      year: 2021,
-      transmission: "Auto",
-      price: 240000,
-      type: "suv",
-      location: "lagos",
-      image: toyotaPrado2021Image,
-      rating: 4.7,
-      features: ["Family Friendly", "Reliable", "Comfortable"]
-    },
-    {
-      id: 13,
-      model: "Range Rover Sports",
-      year: 2021,
-      transmission: "Auto",
-      price: 450000,
-      type: "luxury-suv",
-      location: "lagos",
-      image: raneRoverImage,
-      rating: 4.6,
-      features: ["Family friendly", "Robust", "Business Ready"]
-    },
-    {
-      id: 14,
-      model: "Mercedes-AMG G 63 ",
-      year: 2023,
-      transmission: "Auto",
-      price: 1500000,
-      type: "luxury-suv",
-      location: "Lagos",
-      image: g63BulletproofImage,
-      rating: 5.0,
-      features: ["Comfort", "Luxury", "Prestige"]
-    },
-    {
-      id: 15,
-      model: "Toyota Prado",
-      year: 2021,
-      transmission: "Auto",
-      price: 240000,
-      type: "suv",
-      location: "lagos",
-      image: toyotaPrado2021Image,
-      rating: 4.7,
-      features: ["Family Friendly", "Reliable", "Comfortable"]
-    }
   ];
 
   const filteredCars = cars.filter(car => {
-    return (
-      (selectedLocation === "all" || car.location === selectedLocation) &&
-      (selectedType === "all" || car.type === selectedType) &&
-      (selectedTransmission === "all" || car.transmission === selectedTransmission)
-    );
+    if (selectedLocation !== "all" && car.location !== selectedLocation) return false;
+    if (selectedType !== "all" && car.type !== selectedType) return false;
+    if (selectedTransmission !== "all" && car.transmission !== selectedTransmission) return false;
+    return true;
   });
 
-// Limit to 12 cars on home page
-  const displayedCars = filteredCars.slice(0, 12);
-  
+  const displayedCars = filteredCars.slice(0, 9);
+
   const formatPrice = (price: number) => {
-    return new Intl.NumberFormat('en-NG', {
-      style: 'currency',
-      currency: 'NGN',
-      minimumFractionDigits: 0,
-    }).format(price);
+    return `₦${price.toLocaleString()}/day`;
   };
 
   return (
-    <section id="rentals" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Premium <span className="text-secondary">Fleet</span>
+            Premium Fleet
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Choose from our carefully curated collection of luxury vehicles, 
-            each maintained to the highest standards of excellence.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Discover our exclusive collection of ultra-luxury and high-end vehicles
           </p>
         </div>
 
         {/* Filters */}
-        <div className="flex flex-wrap gap-4 mb-8 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 max-w-4xl mx-auto">
           <Select value={selectedLocation} onValueChange={setSelectedLocation}>
-            <SelectTrigger className="w-[180px]">
-              <MapPin className="w-4 h-4 mr-2" />
-              <SelectValue placeholder="Location" />
+            <SelectTrigger>
+              <SelectValue placeholder="Select Location" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Locations</SelectItem>
@@ -261,21 +173,20 @@ const FleetGallery = () => {
           </Select>
 
           <Select value={selectedType} onValueChange={setSelectedType}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger>
               <SelectValue placeholder="Car Type" />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Types</SelectItem>
+              <SelectItem value="high-end">High-End Luxury</SelectItem>
               <SelectItem value="luxury-suv">Luxury SUV</SelectItem>
-              <SelectItem value="sedan">Sedan</SelectItem>
-              <SelectItem value="suv">SUV</SelectItem>
-              <SelectItem value="pickup">Pickup</SelectItem>
+              <SelectItem value="luxury-sedan">Luxury Sedan</SelectItem>
+              <SelectItem value="bulletproof">Bulletproof</SelectItem>
             </SelectContent>
           </Select>
 
           <Select value={selectedTransmission} onValueChange={setSelectedTransmission}>
-            <SelectTrigger className="w-[180px]">
-              <Settings className="w-4 h-4 mr-2" />
+            <SelectTrigger>
               <SelectValue placeholder="Transmission" />
             </SelectTrigger>
             <SelectContent>
@@ -286,109 +197,103 @@ const FleetGallery = () => {
           </Select>
         </div>
 
-        {/* Fleet Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredCars.map((car) => (
-            <Card key={car.id} className="group hover:shadow-luxury transition-luxury bg-gradient-card border-border/50">
-              <CardHeader className="relative p-0">
-                <div className="aspect-video bg-muted rounded-t-lg overflow-hidden">
-                  <img
-                    src={car.image}
-                    alt={car.model}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-luxury"
-                  />
-                </div>
-                <div className="absolute top-4 left-4">
-                  <Badge variant="secondary" className="bg-secondary/90 text-secondary-foreground">
-                    {car.year}
-                  </Badge>
-                </div>
-                <div className="absolute top-4 right-4 flex items-center gap-1 bg-card/90 px-2 py-1 rounded">
-                  <Star className="w-3 h-3 fill-secondary text-secondary" />
-                  <span className="text-xs font-medium">{car.rating}</span>
-                </div>
-              </CardHeader>
+        {/* Cars Grid */}
+        {displayedCars.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              {displayedCars.map((car) => (
+                <Card key={car.id} className="overflow-hidden hover:shadow-lg transition-all duration-300">
+                  <CardHeader className="p-0">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={car.image} 
+                        alt={car.model}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                      <Badge className="absolute top-4 right-4 bg-gold text-gold-foreground">
+                        {car.year}
+                      </Badge>
+                    </div>
+                  </CardHeader>
+                  
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-2">{car.model}</h3>
+                    
+                    <div className="flex items-center gap-1 mb-4">
+                      <Star className="w-4 h-4 fill-gold text-gold" />
+                      <span className="text-sm font-semibold">{car.rating}</span>
+                    </div>
 
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{car.model}</h3>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    {car.year}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Settings className="w-4 h-4" />
-                    {car.transmission}
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <MapPin className="w-4 h-4" />
-                    {car.location.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                  </div>
-                </div>
-                
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {car.features.map((feature, index) => (
-                    <Badge key={index} variant="outline" className="text-xs">
-                      {feature}
-                    </Badge>
-                  ))}
-                </div>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {car.features.map((feature, index) => (
+                        <Badge key={index} variant="outline" className="text-xs">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
 
-                <div className="text-2xl font-bold text-secondary mb-4">
-                  {formatPrice(car.price)}
-                  <span className="text-sm text-muted-foreground font-normal">/day</span>
-                </div>
-              </CardContent>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                      <div className="flex items-center gap-1">
+                        <MapPin className="w-4 h-4" />
+                        <span className="capitalize">{car.location}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Settings className="w-4 h-4" />
+                        <span>{car.transmission}</span>
+                      </div>
+                    </div>
 
-              <CardFooter className="p-6 pt-0">
-                <div className="flex gap-2 w-full">
-                  <Button 
-                    variant="outline" 
-                    className="flex-1"
-                    onClick={() => navigate(`/car/${car.id}`)}
-                  >
-                    View Details
-                  </Button>
-                  <Button 
-                    variant="luxury" 
-                    className="flex-1"
-                    onClick={() => {
-                      setSelectedCarForBooking(car.model);
-                      setBookingModalOpen(true);
-                    }}
-                  >
-                    Book Now
-                  </Button>
-                </div>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+                    <div className="text-2xl font-bold text-gold mb-4">
+                      {formatPrice(car.price)}
+                    </div>
+                  </CardContent>
 
-        {filteredCars.length === 0 && (
+                  <CardFooter className="p-6 pt-0 gap-2">
+                    <Button 
+                      variant="outline" 
+                      className="flex-1"
+                      onClick={() => navigate(`/car/${car.id}`)}
+                    >
+                      View Details
+                    </Button>
+                    <Button 
+                      variant="gold"
+                      className="flex-1"
+                      onClick={() => {
+                        setSelectedCarForBooking(car.model);
+                        setBookingModalOpen(true);
+                      }}
+                    >
+                      Book Now
+                    </Button>
+                  </CardFooter>
+                </Card>
+              ))}
+            </div>
+
+            {filteredCars.length > 9 && (
+              <div className="text-center">
+                <Button 
+                  variant="gold"
+                  size="lg"
+                  onClick={() => navigate('/fleet')}
+                >
+                  View More Fleet
+                </Button>
+              </div>
+            )}
+          </>
+        ) : (
           <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">
-              No vehicles match your current filters. Please adjust your search criteria.
+            <p className="text-xl text-muted-foreground">
+              No vehicles match your current filters. Please adjust your selection.
             </p>
-          </div>
-        )}
-
-        {/* View More Fleet Button */}
-        {filteredCars.length > 12 && (
-          <div className="text-center mt-12">
-            <Button 
-              variant="luxury" 
-              size="lg"
-              onClick={() => navigate('/fleet')}
-            >
-              View More Fleet
-            </Button>
           </div>
         )}
       </div>
 
-      <BookingForm
-        isOpen={bookingModalOpen}
+      <BookingForm 
+        isOpen={bookingModalOpen} 
         onClose={() => setBookingModalOpen(false)}
         selectedCarModel={selectedCarForBooking}
       />

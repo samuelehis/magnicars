@@ -68,21 +68,21 @@ const About = () => {
 
   const team = [
     {
-      name: "Oladayo Olawunmi",
-      position: "Chief Operating Officer",
+      name: "Adebayo Johnson",
+      position: "Chief Executive Officer",
       description: "20+ years in luxury automotive industry",
       image: "/placeholder.svg"
     },
     {
-      name: "Joy Omudu",
-      position: "Head of Customer Service",
-      description: "12+ years in fleet management and customer service",
+      name: "Kemi Okafor",
+      position: "Head of Operations",
+      description: "Expert in fleet management and customer service",
       image: "/placeholder.svg"
     },
     {
-      name: "Samuel Ehis",
-      position: "IT & Marketing",
-      description: "8+ years of building IT solutions and marketing strategy",
+      name: "Ibrahim Musa",
+      position: "Senior Fleet Manager",
+      description: "Specialist in luxury vehicle maintenance and care",
       image: "/placeholder.svg"
     }
   ];

@@ -12,6 +12,8 @@ import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
 import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
+import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletprooof.jpg";
+import benzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();
@@ -55,7 +57,7 @@ const FleetGallery = () => {
       price: 2300000,
       type: "bulletproof",
       location: "lagos",
-      image: porscheCayenneImage,
+      image: g63BulletproofImage,
       rating: 5.0,
       features: ["Armored", "VIP Security", "Ultimate Protection"]
     },
@@ -79,7 +81,7 @@ const FleetGallery = () => {
       price: 1800000,
       type: "luxury-suv",
       location: "lagos",
-      image: porscheCayenneImage,
+      image: g63BulletproofImage,
       rating: 5.0,
       features: ["Iconic", "Exclusive", "Power"]
     },
@@ -91,7 +93,7 @@ const FleetGallery = () => {
       price: 1500000,
       type: "luxury-sedan",
       location: "lagos",
-      image: hondaAccordImage,
+      image: benzSclassImage,
       rating: 5.0,
       features: ["Executive", "Ultimate Luxury", "Chauffeur"]
     },
@@ -103,7 +105,7 @@ const FleetGallery = () => {
       price: 1500000,
       type: "luxury-sedan",
       location: "abuja",
-      image: hondaAccordImage,
+      image: benzSclassImage,
       rating: 5.0,
       features: ["Performance", "Technology", "AMG"]
     },

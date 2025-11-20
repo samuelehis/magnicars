@@ -14,6 +14,10 @@ import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
 import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletprooof.jpg";
 import benzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
+import escalade2024Image from "@/assets/cars/Escalade-2024.jpg";
+import rangeRoverSportImage from "@/assets/cars/Range-Rover-Sport.jpg";
+import maybachVianoImage from "@/assets/cars/Maybach-Viano.jpg";
+import gle350Image from "@/assets/cars/GLE-350-2017.jpg";
 
 const FleetGallery = () => {
   const navigate = useNavigate();
@@ -39,13 +43,13 @@ const FleetGallery = () => {
     },
     {
       id: 2,
-      model: "Rolls Royce Cullinan",
-      year: 2023,
+      model: "Toyota Prado",
+      year: 2019,
       transmission: "Auto",
-      price: 6000000,
+      price: 220000,
       type: "high-end",
       location: "lagos",
-      image: rollsRoyceImage,
+      image: toyotaPradoImage,
       rating: 5.0,
       features: ["Ultimate SUV", "Luxury", "Prestige"]
     },
@@ -63,25 +67,25 @@ const FleetGallery = () => {
     },
     {
       id: 4,
-      model: "Bentley GT",
-      year: 2023,
+      model: "Escalade",
+      year: 2024,
       transmission: "Auto",
-      price: 2000000,
+      price: 750000,
       type: "high-end",
       location: "lagos",
-      image: rollsRoyceImage,
+      image: escalade2024Image,
       rating: 5.0,
       features: ["Performance", "Luxury", "Prestige"]
     },
     {
       id: 5,
-      model: "Mercedes Benz G63 Soft Body",
-      year: 2022,
+      model: "Mercedes Benz GLE350",
+      year: 2017,
       transmission: "Auto",
-      price: 1800000,
+      price: 300000,
       type: "luxury-suv",
       location: "lagos",
-      image: g63BulletproofImage,
+      image: gle350Image,
       rating: 5.0,
       features: ["Iconic", "Exclusive", "Power"]
     },
@@ -111,25 +115,25 @@ const FleetGallery = () => {
     },
     {
       id: 8,
-      model: "BMW 730i Series",
-      year: 2023,
+      model: "Maybach Viano",
+      year: 2022,
       transmission: "Auto",
-      price: 1500000,
-      type: "luxury-sedan",
+      price: 600000,
+      type: "luxury-bus",
       location: "lagos",
-      image: hondaAccordImage,
+      image: maybachVianoImage,
       rating: 5.0,
       features: ["Executive", "Premium", "Tech"]
     },
     {
       id: 9,
-      model: "Bentley",
+      model: "Range Rover Sport",
       year: 2020,
       transmission: "Auto",
-      price: 1300000,
+      price: 450000,
       type: "high-end",
       location: "lagos",
-      image: rollsRoyceImage,
+      image: rangeRoverSportImage,
       rating: 5.0,
       features: ["British Luxury", "Prestige", "Power"]
     },

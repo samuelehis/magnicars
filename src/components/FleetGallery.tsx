@@ -12,7 +12,7 @@ import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
 import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
-import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletprooof.jpg";
+import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
 import benzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
 import escalade2024Image from "@/assets/cars/Escalade-2024.jpg";
 import rangeRoverSportImage from "@/assets/cars/Range-Rover-Sport.jpg";

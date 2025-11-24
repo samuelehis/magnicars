@@ -14,7 +14,7 @@ const corsHeaders = {
 const bookingSchema = z.object({
   fullName: z.string().trim().min(2, "Name must be at least 2 characters").max(100, "Name is too long"),
   email: z.string().email("Invalid email address").max(255, "Email is too long"),
-  phoneNumber: z.string().regex(/^\+?[1-9]\d{1,14}$/, "Invalid phone number format"),
+  phoneNumber: z.string().regex(/^\+?\d{7,15}$/, "Invalid phone number format"),
   reservationTime: z.string().min(1, "Reservation time is required").max(50),
   carModel: z.string().trim().min(1, "Car model is required").max(100),
   pickupLocation: z.string().trim().min(1, "Pickup location is required").max(200),

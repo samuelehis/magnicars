@@ -40,7 +40,7 @@ import { supabase } from "@/integrations/supabase/client";
 const bookingSchema = z.object({
   fullName: z.string().min(2, "Full name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
-  phoneNumber: z.string().min(10, "Phone number must be at least 10 digits"),
+  phoneNumber: z.string().regex(/^\+?\d{7,15}$/, "Invalid phone number format"),
   reservationTime: z.string().min(1, "Please select a reservation time"),
   carModel: z.string().min(1, "Please select a car model"),
   pickupLocation: z.string().min(1, "Please select a pickup location"),

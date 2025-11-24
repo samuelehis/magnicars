@@ -137,6 +137,66 @@ const FleetGallery = () => {
       rating: 5.0,
       features: ["British Luxury", "Prestige", "Power"]
     },
+    {
+      id: 10,
+      model: "Mercedes Benz GLE350",
+      year: 2017,
+      transmission: "Auto",
+      price: 300000,
+      type: "luxury-suv",
+      location: "lagos",
+      image: gle350Image,
+      rating: 5.0,
+      features: ["Iconic", "Exclusive", "Power"]
+    },
+    {
+      id: 11,
+      model: "Mercedes Benz Maybach S560",
+      year: 2023,
+      transmission: "Auto",
+      price: 1500000,
+      type: "luxury-sedan",
+      location: "lagos",
+      image: benzSclassImage,
+      rating: 5.0,
+      features: ["Executive", "Ultimate Luxury", "Chauffeur"]
+    },
+    {
+      id: 12,
+      model: "Mercedes Benz S-Class 580 AMG",
+      year: 2023,
+      transmission: "Auto",
+      price: 1500000,
+      type: "luxury-sedan",
+      location: "abuja",
+      image: benzSclassImage,
+      rating: 5.0,
+      features: ["Performance", "Technology", "AMG"]
+    },
+    {
+      id: 13,
+      model: "Maybach Viano",
+      year: 2022,
+      transmission: "Auto",
+      price: 600000,
+      type: "luxury-bus",
+      location: "lagos",
+      image: maybachVianoImage,
+      rating: 5.0,
+      features: ["Executive", "Premium", "Tech"]
+    },
+    {
+      id: 14,
+      model: "Range Rover Sport",
+      year: 2020,
+      transmission: "Auto",
+      price: 450000,
+      type: "high-end",
+      location: "lagos",
+      image: rangeRoverSportImage,
+      rating: 5.0,
+      features: ["British Luxury", "Prestige", "Power"]
+    },
   ];
 
   const filteredCars = cars.filter(car => {
@@ -146,7 +206,7 @@ const FleetGallery = () => {
     return true;
   });
 
-  const displayedCars = filteredCars.slice(0, 9);
+  const displayedCars = filteredCars.slice(0, 12);
 
   const formatPrice = (price: number) => {
     return `₦${price.toLocaleString()}/day`;
@@ -277,7 +337,7 @@ const FleetGallery = () => {
               ))}
             </div>
 
-            {filteredCars.length > 9 && (
+            {filteredCars.length > 12 && (
               <div className="text-center">
                 <Button 
                   variant="gold"

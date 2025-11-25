@@ -14,6 +14,12 @@ import toyotaLandcruiserImage from "@/assets/cars/toyota-landcruiser.jpg";
 import toyotaHiluxImage from "@/assets/cars/toyota-hilux.jpg";
 import porscheCayenneImage from "@/assets/cars/porsche-cayenne.jpg";
 import toyotaPradoImage from "@/assets/cars/toyota-prado.jpg";
+import g63BulletproofImage from "@/assets/cars/2020-G63-Bulletproof.jpg";
+import benzSclassImage from "@/assets/cars/Benz-S-Class-2023.jpg";
+import escalade2024Image from "@/assets/cars/Escalade-2024.jpg";
+import rangeRoverSportImage from "@/assets/cars/Range-Rover-Sport.jpg";
+import maybachVianoImage from "@/assets/cars/Maybach-Viano.jpg";
+import gle350Image from "@/assets/cars/GLE-350-2017.jpg";
 
 const Fleet = () => {
   const navigate = useNavigate();
@@ -39,161 +45,159 @@ const Fleet = () => {
     },
     {
       id: 2,
-      model: "Rolls Royce Cullinan",
-      year: 2023,
+      model: "Toyota Prado",
+      year: 2019,
       transmission: "Auto",
-      price: 6000000,
+      price: 220000,
       type: "high-end",
       location: "lagos",
-      image: rollsRoyceImage,
+      image: toyotaPradoImage,
       rating: 5.0,
       features: ["Ultimate SUV", "Luxury", "Prestige"]
     },
     {
       id: 3,
-      model: "Bentley GT",
-      year: 2023,
+      model: "Mercedes Benz G63 Bulletproof",
+      year: 2020,
       transmission: "Auto",
-      price: 2000000,
+      price: 2300000,
+      type: "bulletproof",
+      location: "lagos",
+      image: g63BulletproofImage,
+      rating: 5.0,
+      features: ["Armored", "VIP Security", "Ultimate Protection"]
+    },
+    {
+      id: 4,
+      model: "Escalade",
+      year: 2024,
+      transmission: "Auto",
+      price: 750000,
       type: "high-end",
       location: "lagos",
-      image: rollsRoyceImage,
+      image: escalade2024Image,
       rating: 5.0,
       features: ["Performance", "Luxury", "Prestige"]
     },
     {
-      id: 4,
-      model: "Rolls Royce Ghost",
-      year: 2023,
-      transmission: "Auto",
-      price: 900000,
-      type: "high-end",
-      location: "abuja",
-      image: rollsRoyceImage,
-      rating: 5.0,
-      features: ["Elegance", "Chauffeur", "Premium"]
-    },
-    {
       id: 5,
-      model: "Bentley",
-      year: 2020,
+      model: "Mercedes Benz GLE350",
+      year: 2017,
       transmission: "Auto",
-      price: 1300000,
-      type: "high-end",
-      location: "lagos",
-      image: rollsRoyceImage,
-      rating: 5.0,
-      features: ["British Luxury", "Prestige", "Power"]
-    },
-    {
-      id: 6,
-      model: "Cadillac Escalade",
-      year: 2023,
-      transmission: "Auto",
-      price: 750000,
-      type: "luxury-suv",
-      location: "abuja",
-      image: porscheCayenneImage,
-      rating: 4.9,
-      features: ["Spacious", "Premium", "Tech"]
-    },
-    {
-      id: 7,
-      model: "Porsche Cayenne",
-      year: 2023,
-      transmission: "Auto",
-      price: 650000,
+      price: 300000,
       type: "luxury-suv",
       location: "lagos",
-      image: porscheCayenneImage,
-      rating: 5.0,
-      features: ["Sports Performance", "Luxury", "AMG"]
-    },
-
-    // MERCEDES BENZ EXOTIC CARS
-    {
-      id: 8,
-      model: "Mercedes Benz G63 Soft Body",
-      year: 2022,
-      transmission: "Auto",
-      price: 1800000,
-      type: "luxury-suv",
-      location: "lagos",
-      image: porscheCayenneImage,
+      image: gle350Image,
       rating: 5.0,
       features: ["Iconic", "Exclusive", "Power"]
     },
     {
-      id: 9,
+      id: 6,
       model: "Mercedes Benz Maybach S560",
       year: 2023,
       transmission: "Auto",
       price: 1500000,
       type: "luxury-sedan",
       location: "lagos",
-      image: hondaAccordImage,
+      image: benzSclassImage,
       rating: 5.0,
       features: ["Executive", "Ultimate Luxury", "Chauffeur"]
     },
     {
-      id: 10,
+      id: 7,
       model: "Mercedes Benz S-Class 580 AMG",
       year: 2023,
       transmission: "Auto",
       price: 1500000,
       type: "luxury-sedan",
       location: "abuja",
-      image: hondaAccordImage,
+      image: benzSclassImage,
       rating: 5.0,
       features: ["Performance", "Technology", "AMG"]
     },
     {
+      id: 8,
+      model: "Maybach Viano",
+      year: 2022,
+      transmission: "Auto",
+      price: 600000,
+      type: "luxury-bus",
+      location: "lagos",
+      image: maybachVianoImage,
+      rating: 5.0,
+      features: ["Executive", "Premium", "Tech"]
+    },
+    {
+      id: 9,
+      model: "Range Rover Sport",
+      year: 2020,
+      transmission: "Auto",
+      price: 450000,
+      type: "high-end",
+      location: "lagos",
+      image: rangeRoverSportImage,
+      rating: 5.0,
+      features: ["British Luxury", "Prestige", "Power"]
+    },
+    {
+      id: 10,
+      model: "Mercedes Benz GLE350",
+      year: 2017,
+      transmission: "Auto",
+      price: 300000,
+      type: "luxury-suv",
+      location: "lagos",
+      image: gle350Image,
+      rating: 5.0,
+      features: ["Iconic", "Exclusive", "Power"]
+    },
+    {
       id: 11,
-      model: "BMW 730i Series",
+      model: "Mercedes Benz Maybach S560",
       year: 2023,
       transmission: "Auto",
       price: 1500000,
       type: "luxury-sedan",
       location: "lagos",
-      image: hondaAccordImage,
+      image: benzSclassImage,
+      rating: 5.0,
+      features: ["Executive", "Ultimate Luxury", "Chauffeur"]
+    },
+    {
+      id: 12,
+      model: "Mercedes Benz S-Class 580 AMG",
+      year: 2023,
+      transmission: "Auto",
+      price: 1500000,
+      type: "luxury-sedan",
+      location: "abuja",
+      image: benzSclassImage,
+      rating: 5.0,
+      features: ["Performance", "Technology", "AMG"]
+    },
+    {
+      id: 13,
+      model: "Maybach Viano",
+      year: 2022,
+      transmission: "Auto",
+      price: 600000,
+      type: "luxury-bus",
+      location: "lagos",
+      image: maybachVianoImage,
       rating: 5.0,
       features: ["Executive", "Premium", "Tech"]
     },
     {
-      id: 12,
-      model: "Mercedes Benz GLC 300",
-      year: 2023,
-      transmission: "Auto",
-      price: 1300000,
-      type: "luxury-suv",
-      location: "abuja",
-      image: porscheCayenneImage,
-      rating: 5.0,
-      features: ["Brand New", "Luxury", "Compact SUV"]
-    },
-    {
-      id: 13,
-      model: "Mercedes Benz G63",
-      year: 2019,
-      transmission: "Auto",
-      price: 900000,
-      type: "luxury-suv",
-      location: "lagos",
-      image: porscheCayenneImage,
-      rating: 5.0,
-      features: ["Iconic Design", "Premium", "Power"]
-    },
-    {
       id: 14,
-      model: "Mercedes Benz Maybach",
+      model: "Range Rover Sport",
       year: 2020,
       transmission: "Auto",
-      price: 700000,
-      type: "luxury-sedan",
-      location: "abuja",
-      image: hondaAccordImage,
+      price: 450000,
+      type: "high-end",
+      location: "lagos",
+      image: rangeRoverSportImage,
       rating: 5.0,
-      features: ["White", "Luxury", "Chauffeur"]
+      features: ["British Luxury", "Prestige", "Power"]
     },
     {
       id: 15,
@@ -203,7 +207,7 @@ const Fleet = () => {
       price: 650000,
       type: "luxury-suv",
       location: "lagos",
-      image: porscheCayenneImage,
+      image: gle350Image,
       rating: 4.9,
       features: ["7-Seater", "Premium", "Spacious"]
     },
@@ -215,7 +219,7 @@ const Fleet = () => {
       price: 600000,
       type: "luxury-bus",
       location: "port-harcourt",
-      image: porscheCayenneImage,
+      image: maybachVianoImage,
       rating: 4.8,
       features: ["Luxury Bus", "Spacious", "Premium"]
     },

@@ -68,21 +68,21 @@ const About = () => {
 
   const team = [
     {
-      name: "Adebayo Johnson",
-      position: "Chief Executive Officer",
-      description: "20+ years in luxury automotive industry",
-      image: "/placeholder.svg"
-    },
-    {
-      name: "Kemi Okafor",
+      name: "Oladayo Olwawunmi",
       position: "Head of Operations",
-      description: "Expert in fleet management and customer service",
+      description: "A versatile leader with a 15-year legacy in the automotive sector and a high-impact background in fintech sales and credit advisory, he now drives operational excellence as the Head of Operations for a luxury automobile brand.",
       image: "/placeholder.svg"
     },
     {
-      name: "Ibrahim Musa",
-      position: "Senior Fleet Manager",
-      description: "Specialist in luxury vehicle maintenance and care",
+      name: "Samuel Ehis",
+      position: "IT & Marketing",
+      description: "An entrepreneurial Technical Delivery Manager with 8+ years of experience, he merges deep technical roots in cybersecurity and diagnostics with strategic KPI-driven leadership to deliver cutting-edge IT and marketing solutions across the fintech and luxury automobile sectors",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Joy Omudu-Ehis",
+      position: "Head of Customer Service",
+      description: "From scaling digital service in fintech to leading premium customer operations in luxury automobiles, she leverages 12 years of financial sector expertise to redefine the elite client experience.",
       image: "/placeholder.svg"
     }
   ];
@@ -143,7 +143,7 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                To provide unparalleled luxury automotive services that enhance the lifestyle and business operations of Nigeria's most successful individuals and organizations. We are committed to delivering experiences that combine comfort, prestige, and reliability.
+                To provide exceptional luxury automotive services that enhance the lifestyle and business operations of Nigeria's most successful individuals and organizations. We are committed to delivering experiences that combine comfort, prestige, and reliability.
               </p>
               
               <h3 className="text-2xl font-bold text-foreground mb-6">
